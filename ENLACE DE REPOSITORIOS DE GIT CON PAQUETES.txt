@@ -1,0 +1,8 @@
+ENLACES DE REPOSITORIOS DE GIT CON PAQUETES PARA LOS PROYECTOS
+--------------------------------------------------------------
+
+1.
+		https://github.com/nomeera/nomeer_robot_ros2
+
+2.
+		https://github.com/Robotisim/mobile_robotics_ROS2
