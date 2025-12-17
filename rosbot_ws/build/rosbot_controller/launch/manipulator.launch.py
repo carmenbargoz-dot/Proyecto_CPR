@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/src/rosbot_ros/rosbot_controller/launch/manipulator.launch.py

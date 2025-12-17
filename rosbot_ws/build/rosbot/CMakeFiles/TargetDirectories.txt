@@ -1,0 +1,9 @@
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/uninstall.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/rosbot_uninstall.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/test.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/edit_cache.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/rebuild_cache.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/list_install_components.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/install.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/install/local.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/CMakeFiles/install/strip.dir

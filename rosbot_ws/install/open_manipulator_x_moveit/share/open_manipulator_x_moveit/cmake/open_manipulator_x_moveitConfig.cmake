@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_moveit/ament_cmake_core/open_manipulator_x_moveitConfig.cmake

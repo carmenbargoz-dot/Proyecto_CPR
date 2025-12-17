@@ -1,0 +1,6 @@
+Invoking command in '/home/ana/rosbot_ws/src/build/rosbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ana/rosbot_ws/src/rosbot_ros/rosbot -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/rosbot_ws/src/install/rosbot
+Invoked command in '/home/ana/rosbot_ws/src/build/rosbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ana/rosbot_ws/src/rosbot_ros/rosbot -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/rosbot_ws/src/install/rosbot
+Invoking command in '/home/ana/rosbot_ws/src/build/rosbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/rosbot_ws/src/build/rosbot -- -j8 -l8
+Invoked command in '/home/ana/rosbot_ws/src/build/rosbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/rosbot_ws/src/build/rosbot -- -j8 -l8
+Invoking command in '/home/ana/rosbot_ws/src/build/rosbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/rosbot_ws/src/build/rosbot
+Invoked command in '/home/ana/rosbot_ws/src/build/rosbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/rosbot_ws/src/build/rosbot

@@ -1,0 +1,4 @@
+Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization -- -j16 -l16
+Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization -- -j16 -l16
+Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization
+Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_localization

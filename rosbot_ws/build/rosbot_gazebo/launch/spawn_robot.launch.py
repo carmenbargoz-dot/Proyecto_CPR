@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/src/rosbot_ros/rosbot_gazebo/launch/spawn_robot.launch.py

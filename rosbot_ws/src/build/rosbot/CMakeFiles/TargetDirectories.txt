@@ -1,0 +1,9 @@
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/uninstall.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/rosbot_uninstall.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/test.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/edit_cache.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/rebuild_cache.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/list_install_components.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/install.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/install/local.dir
+/home/ana/rosbot_ws/src/build/rosbot/CMakeFiles/install/strip.dir

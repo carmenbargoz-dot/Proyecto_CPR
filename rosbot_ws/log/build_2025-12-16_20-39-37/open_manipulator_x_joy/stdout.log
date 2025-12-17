@@ -1,0 +1,25 @@
+[100%] Built target joy_servo
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/config/joy_servo.yaml
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/config/servo.yaml
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/joy2servo.hpp
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/joy_control.hpp
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/joy_servo_node.hpp
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/manipulation_controller.hpp
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/lib/open_manipulator_x_joy/joy_servo
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_joy
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_joy
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/path.sh
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/path.dsv
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.bash
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.sh
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.zsh
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.dsv
+-- Symlinking: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/package.dsv
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/ament_index/resource_index/packages/open_manipulator_x_joy
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/cmake/open_manipulator_x_joyConfig.cmake
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/cmake/open_manipulator_x_joyConfig-version.cmake
+-- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/package.xml

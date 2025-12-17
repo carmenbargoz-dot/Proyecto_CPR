@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/ament_cmake_core/rosbotConfig-version.cmake

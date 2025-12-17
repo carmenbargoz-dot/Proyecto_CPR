@@ -1,0 +1,41 @@
+[0.059s] Invoking command in '/home/ana/rosbot_ws/src/build/rosbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ana/rosbot_ws/src/rosbot_ros/rosbot -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/rosbot_ws/src/install/rosbot
+[1.107s] -- The C compiler identification is GNU 11.4.0
+[1.879s] -- The CXX compiler identification is GNU 11.4.0
+[1.938s] -- Detecting C compiler ABI info
+[2.107s] -- Detecting C compiler ABI info - done
+[2.112s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.113s] -- Detecting C compile features
+[2.146s] -- Detecting C compile features - done
+[2.154s] -- Detecting CXX compiler ABI info
+[2.233s] -- Detecting CXX compiler ABI info - done
+[2.237s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.237s] -- Detecting CXX compile features
+[2.238s] -- Detecting CXX compile features - done
+[2.321s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.526s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.624s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.853s] -- Configuring done
+[2.854s] -- Generating done
+[2.855s] -- Build files have been written to: /home/ana/rosbot_ws/src/build/rosbot
+[2.858s] Invoked command in '/home/ana/rosbot_ws/src/build/rosbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ana/rosbot_ws/src/rosbot_ros/rosbot -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/rosbot_ws/src/install/rosbot
+[2.860s] Invoking command in '/home/ana/rosbot_ws/src/build/rosbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/rosbot_ws/src/build/rosbot -- -j8 -l8
+[2.882s] Invoked command in '/home/ana/rosbot_ws/src/build/rosbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/rosbot_ws/src/build/rosbot -- -j8 -l8
+[2.889s] Invoking command in '/home/ana/rosbot_ws/src/build/rosbot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/rosbot_ws/src/build/rosbot
+[2.893s] -- Install configuration: "Release"
+[2.893s] -- Execute custom install script
+[2.893s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/ament_index/resource_index/package_run_dependencies/rosbot
+[2.898s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/ament_index/resource_index/parent_prefix_path/rosbot
+[2.904s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/environment/ament_prefix_path.sh
+[2.909s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/environment/ament_prefix_path.dsv
+[2.915s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/environment/path.sh
+[2.920s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/environment/path.dsv
+[2.926s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/local_setup.bash
+[2.931s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/local_setup.sh
+[2.937s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/local_setup.zsh
+[2.943s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/local_setup.dsv
+[2.948s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/package.dsv
+[2.954s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/ament_index/resource_index/packages/rosbot
+[2.960s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/cmake/rosbotConfig.cmake
+[2.965s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/cmake/rosbotConfig-version.cmake
+[2.970s] -- Symlinking: /home/ana/rosbot_ws/src/install/rosbot/share/rosbot/package.xml
+[2.976s] Invoked command in '/home/ana/rosbot_ws/src/build/rosbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/rosbot_ws/src/build/rosbot

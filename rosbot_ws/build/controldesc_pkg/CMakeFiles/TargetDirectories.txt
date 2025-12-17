@@ -1,0 +1,10 @@
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/uninstall.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/controldesc_pkg_uninstall.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/controller_node.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/test.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/edit_cache.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/rebuild_cache.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/list_install_components.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/install.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/install/local.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg/CMakeFiles/install/strip.dir

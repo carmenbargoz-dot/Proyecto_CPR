@@ -1,0 +1,10 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:29 (message):
+  ament_environment_hooks() must be called before
+  ament_generate_package_environment() (which is invoked by ament_package())
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_python/cmake/ament_cmake_python-extras.cmake:36 (ament_environment_hooks)
+  /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:38 (_ament_cmake_python_register_environment_hook)
+  CMakeLists.txt:34 (ament_python_install_package)
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

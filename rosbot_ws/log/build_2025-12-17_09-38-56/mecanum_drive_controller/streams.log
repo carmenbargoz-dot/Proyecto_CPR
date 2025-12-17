@@ -1,0 +1,37 @@
+[0.104s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller -- -j16 -l16
+[1.048s] [ 33%] Built target mecanum_drive_controller_parameters
+[1.049s] [100%] Built target mecanum_drive_controller
+[1.076s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller -- -j16 -l16
+[1.080s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller
+[1.139s] -- Install configuration: "Release"
+[1.140s] -- Execute custom install script
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller//mecanum_drive_plugin.xml
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/speed_limiter.hpp
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[1.140s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[1.141s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[1.141s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[1.141s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[1.141s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[1.142s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[1.143s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[1.144s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[1.144s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[1.144s] -- Symlinking: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[1.161s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[1.161s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[1.163s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.163s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[1.165s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[1.165s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[1.165s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[1.166s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[1.166s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[1.167s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-release.cmake
+[1.247s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller

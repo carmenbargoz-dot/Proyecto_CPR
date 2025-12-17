@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/src/open_manipulator_x/open_manipulator_x_moveit/launch/move_group.launch.py

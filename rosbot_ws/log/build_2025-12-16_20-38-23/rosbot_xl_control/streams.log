@@ -1,0 +1,20 @@
+[0.394s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control -- -j16 -l16
+[0.449s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control -- -j16 -l16
+[0.450s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control
+[0.463s] -- Install configuration: ""
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/ament_index/resource_index/package_run_dependencies/rosbot_xl_control
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/ament_index/resource_index/parent_prefix_path/rosbot_xl_control
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/environment/ament_prefix_path.sh
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/environment/ament_prefix_path.dsv
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/environment/path.sh
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/environment/path.dsv
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/local_setup.bash
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/local_setup.sh
+[0.463s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/local_setup.zsh
+[0.464s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/local_setup.dsv
+[0.464s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/package.dsv
+[0.464s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/ament_index/resource_index/packages/rosbot_xl_control
+[0.464s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/cmake/rosbot_xl_controlConfig.cmake
+[0.464s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/cmake/rosbot_xl_controlConfig-version.cmake
+[0.464s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_xl_control/share/rosbot_xl_control/package.xml
+[0.507s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control

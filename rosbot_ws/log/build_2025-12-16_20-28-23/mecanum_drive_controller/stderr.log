@@ -1,0 +1,6 @@
+In file included from [01m[K/home/ale/Proyecto_CPR/rosbot_ws/src/husarion_controllers/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:50[m[K,
+                 from [01m[K/home/ale/Proyecto_CPR/rosbot_ws/src/husarion_controllers/mecanum_drive_controller/src/mecanum_drive_controller.cpp:30[m[K:
+[01m[K/home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller/include/mecanum_drive_controller_parameters.hpp:1:175:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "mecanum_drive_controller_parameters.hpp" is deprecated. Use #include <mecanum_drive_controller/mecanum_drive_controller_parameters.hpp> instead.[m[K’
+    1 | um_drive_controller/mecanum_drive_controller_parameters.hpp> instead."[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+

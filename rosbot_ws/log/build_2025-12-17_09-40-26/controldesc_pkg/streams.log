@@ -1,0 +1,23 @@
+[0.205s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg -- -j16 -l16
+[0.379s] [100%] Built target controller_node
+[0.398s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg -- -j16 -l16
+[0.400s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg
+[0.426s] -- Install configuration: ""
+[0.426s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/lib/controldesc_pkg/controller_node
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/lib/controldesc_pkg/robot_controller.py
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/ament_index/resource_index/package_run_dependencies/controldesc_pkg
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/ament_index/resource_index/parent_prefix_path/controldesc_pkg
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/ament_prefix_path.sh
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/ament_prefix_path.dsv
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/path.sh
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/path.dsv
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.bash
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.sh
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.zsh
+[0.427s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.dsv
+[0.427s] -- Installing: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/package.dsv
+[0.428s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/ament_index/resource_index/packages/controldesc_pkg
+[0.428s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/cmake/controldesc_pkgConfig.cmake
+[0.428s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/cmake/controldesc_pkgConfig-version.cmake
+[0.428s] -- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/package.xml
+[0.462s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/controldesc_pkg

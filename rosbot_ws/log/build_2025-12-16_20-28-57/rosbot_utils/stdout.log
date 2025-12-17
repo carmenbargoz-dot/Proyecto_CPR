@@ -1,0 +1,46 @@
+running develop
+Removing /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot-utils.egg-link (link to .)
+running egg_info
+writing ../../../build/rosbot_utils/rosbot_utils.egg-info/PKG-INFO
+writing dependency_links to ../../../build/rosbot_utils/rosbot_utils.egg-info/dependency_links.txt
+writing entry points to ../../../build/rosbot_utils/rosbot_utils.egg-info/entry_points.txt
+writing requirements to ../../../build/rosbot_utils/rosbot_utils.egg-info/requires.txt
+writing top-level names to ../../../build/rosbot_utils/rosbot_utils.egg-info/top_level.txt
+reading manifest file '../../../build/rosbot_utils/rosbot_utils.egg-info/SOURCES.txt'
+writing manifest file '../../../build/rosbot_utils/rosbot_utils.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build
+creating /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib
+creating /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils
+copying rosbot_utils/flash_firmware_uart.py -> /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils
+copying rosbot_utils/__init__.py -> /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils
+copying rosbot_utils/flash_firmware_usb.py -> /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils
+copying rosbot_utils/utils.py -> /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils
+copying rosbot_utils/flash_firmware.py -> /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils
+running install
+running install_lib
+creating /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils
+copying /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils/flash_firmware_uart.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils
+copying /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils/__init__.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils
+copying /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils/flash_firmware_usb.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils
+copying /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils/utils.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils
+copying /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/build/lib/rosbot_utils/flash_firmware.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils
+byte-compiling /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils/flash_firmware_uart.py to flash_firmware_uart.cpython-310.pyc
+byte-compiling /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils/flash_firmware_usb.py to flash_firmware_usb.cpython-310.pyc
+byte-compiling /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils/utils.py to utils.cpython-310.pyc
+byte-compiling /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils/flash_firmware.py to flash_firmware.cpython-310.pyc
+running install_data
+copying resource/rosbot_utils -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/share/ament_index/resource_index/packages
+copying package.xml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/share/rosbot_utils
+copying config/rosbot/laser_filter.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/share/rosbot_utils/config/rosbot
+copying config/rosbot_xl/laser_filter.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/share/rosbot_utils/config/rosbot_xl
+copying firmware/rosbot/v0.11.0.bin -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/share/rosbot_utils/firmware/rosbot
+copying firmware/rosbot_xl/v1.4.0.bin -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/share/rosbot_utils/firmware/rosbot_xl
+copying launch/laser_filter.launch.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/share/rosbot_utils/launch
+running install_egg_info
+Copying ../../../build/rosbot_utils/rosbot_utils.egg-info to /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/python3.10/site-packages/rosbot_utils-0.15.2-py3.10.egg-info
+running install_scripts
+Installing flash_firmware script to /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils/lib/rosbot_utils
+writing list of installed files to '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_utils/install.log'

@@ -1,0 +1,18 @@
+[1.376s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/src/rosbot_ros/rosbot_bringup': PYTHONPATH=/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rosbot_bringup build --build-base /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_bringup/build install --record /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_bringup/install.log --single-version-externally-managed install_data
+[1.717s] running egg_info
+[1.718s] writing ../../../build/rosbot_bringup/rosbot_bringup.egg-info/PKG-INFO
+[1.718s] writing dependency_links to ../../../build/rosbot_bringup/rosbot_bringup.egg-info/dependency_links.txt
+[1.718s] writing entry points to ../../../build/rosbot_bringup/rosbot_bringup.egg-info/entry_points.txt
+[1.718s] writing requirements to ../../../build/rosbot_bringup/rosbot_bringup.egg-info/requires.txt
+[1.719s] writing top-level names to ../../../build/rosbot_bringup/rosbot_bringup.egg-info/top_level.txt
+[1.719s] reading manifest file '../../../build/rosbot_bringup/rosbot_bringup.egg-info/SOURCES.txt'
+[1.720s] writing manifest file '../../../build/rosbot_bringup/rosbot_bringup.egg-info/SOURCES.txt'
+[1.720s] running build
+[1.720s] running install
+[1.720s] running install_data
+[1.720s] running install_egg_info
+[1.723s] removing '/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup/lib/python3.10/site-packages/rosbot_bringup-0.15.2-py3.10.egg-info' (and everything under it)
+[1.723s] Copying ../../../build/rosbot_bringup/rosbot_bringup.egg-info to /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup/lib/python3.10/site-packages/rosbot_bringup-0.15.2-py3.10.egg-info
+[1.723s] running install_scripts
+[1.757s] writing list of installed files to '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_bringup/install.log'
+[1.826s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/src/rosbot_ros/rosbot_bringup' returned '0': PYTHONPATH=/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rosbot_bringup build --build-base /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_bringup/build install --record /home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_bringup/install.log --single-version-externally-managed install_data

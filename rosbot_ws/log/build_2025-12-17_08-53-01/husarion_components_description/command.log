@@ -1,0 +1,4 @@
+Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description -- -j16 -l16
+Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description -- -j16 -l16
+Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description
+Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description

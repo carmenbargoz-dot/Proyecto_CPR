@@ -1,0 +1,17 @@
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/config/ekf.yaml
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/launch/ekf.launch.py
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/ament_index/resource_index/package_run_dependencies/rosbot_localization
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/ament_index/resource_index/parent_prefix_path/rosbot_localization
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/environment/ament_prefix_path.sh
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/environment/ament_prefix_path.dsv
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/environment/path.sh
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/environment/path.dsv
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/local_setup.bash
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/local_setup.sh
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/local_setup.zsh
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/local_setup.dsv
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/package.dsv
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/ament_index/resource_index/packages/rosbot_localization
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/cmake/rosbot_localizationConfig.cmake
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/cmake/rosbot_localizationConfig-version.cmake
+/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_localization/share/rosbot_localization/package.xml

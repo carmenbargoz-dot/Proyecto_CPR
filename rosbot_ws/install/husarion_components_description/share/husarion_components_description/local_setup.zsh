@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description/ament_cmake_environment_hooks/local_setup.zsh

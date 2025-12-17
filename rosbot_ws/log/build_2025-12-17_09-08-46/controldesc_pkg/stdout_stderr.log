@@ -1,0 +1,19 @@
+[100%] Built target controller_node
+-- Install configuration: ""
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/lib/controldesc_pkg/controller_node
+-- Installing: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/lib/controldesc_pkg/robot_controller.py
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/ament_index/resource_index/package_run_dependencies/controldesc_pkg
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/ament_index/resource_index/parent_prefix_path/controldesc_pkg
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/path.sh
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/environment/path.dsv
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.bash
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.sh
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.zsh
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/local_setup.dsv
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/package.dsv
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/ament_index/resource_index/packages/controldesc_pkg
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/cmake/controldesc_pkgConfig.cmake
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/cmake/controldesc_pkgConfig-version.cmake
+-- Up-to-date: /home/ale/Proyecto_CPR/rosbot_ws/install/controldesc_pkg/share/controldesc_pkg/package.xml

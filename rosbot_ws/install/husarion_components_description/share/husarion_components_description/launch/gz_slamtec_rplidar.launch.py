@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/src/husarion_components_description/launch/gz_slamtec_rplidar.launch.py

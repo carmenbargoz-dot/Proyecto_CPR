@@ -1,0 +1,29 @@
+[0.037s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy -- -j16 -l16
+[0.427s] [100%] Built target joy_servo
+[0.440s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy -- -j16 -l16
+[0.441s] Invoking command in '/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy
+[0.493s] -- Install configuration: "Release"
+[0.497s] -- Execute custom install script
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/config/joy_servo.yaml
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/config/servo.yaml
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/joy2servo.hpp
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/joy_control.hpp
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/joy_servo_node.hpp
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/include/include/open_manipulator_x_joy/manipulation_controller.hpp
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/lib/open_manipulator_x_joy/joy_servo
+[0.498s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/ament_index/resource_index/package_run_dependencies/open_manipulator_x_joy
+[0.500s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/ament_index/resource_index/parent_prefix_path/open_manipulator_x_joy
+[0.503s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/ament_prefix_path.sh
+[0.503s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/ament_prefix_path.dsv
+[0.503s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/path.sh
+[0.503s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/environment/path.dsv
+[0.503s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.bash
+[0.503s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.sh
+[0.503s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.zsh
+[0.504s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/local_setup.dsv
+[0.504s] -- Symlinking: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/package.dsv
+[0.506s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/ament_index/resource_index/packages/open_manipulator_x_joy
+[0.506s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/cmake/open_manipulator_x_joyConfig.cmake
+[0.506s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/cmake/open_manipulator_x_joyConfig-version.cmake
+[0.506s] -- Up-to-date symlink: /home/ale/Proyecto_CPR/rosbot_ws/install/open_manipulator_x_joy/share/open_manipulator_x_joy/package.xml
+[0.569s] Invoked command in '/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_gazebo:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_utils:/home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_joy

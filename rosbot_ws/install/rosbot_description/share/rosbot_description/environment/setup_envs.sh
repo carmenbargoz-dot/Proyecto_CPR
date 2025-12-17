@@ -1,0 +1,1 @@
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_description/ament_cmake_environment_hooks/setup_envs.sh

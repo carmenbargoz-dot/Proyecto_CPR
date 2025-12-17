@@ -1,0 +1,27 @@
+running develop
+Removing /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/lib/python3.10/site-packages/rosbot-controller.egg-link (link to .)
+running egg_info
+writing ../../../build/rosbot_controller/rosbot_controller.egg-info/PKG-INFO
+writing dependency_links to ../../../build/rosbot_controller/rosbot_controller.egg-info/dependency_links.txt
+writing entry points to ../../../build/rosbot_controller/rosbot_controller.egg-info/entry_points.txt
+writing requirements to ../../../build/rosbot_controller/rosbot_controller.egg-info/requires.txt
+writing top-level names to ../../../build/rosbot_controller/rosbot_controller.egg-info/top_level.txt
+reading manifest file '../../../build/rosbot_controller/rosbot_controller.egg-info/SOURCES.txt'
+writing manifest file '../../../build/rosbot_controller/rosbot_controller.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+copying resource/rosbot_controller -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller
+copying config/rosbot/mecanum_drive_controller.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/config/rosbot
+copying config/rosbot/diff_drive_controller.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/config/rosbot
+copying config/rosbot_xl/mecanum_drive_manipulator_controller.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/config/rosbot_xl
+copying config/rosbot_xl/diff_drive_manipulator_controller.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/config/rosbot_xl
+copying config/rosbot_xl/mecanum_drive_controller.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/config/rosbot_xl
+copying config/rosbot_xl/diff_drive_controller.yaml -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/config/rosbot_xl
+copying launch/manipulator.launch.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/launch
+copying launch/controller.launch.py -> /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/share/rosbot_controller/launch
+running install_egg_info
+Copying ../../../build/rosbot_controller/rosbot_controller.egg-info to /home/ale/Proyecto_CPR/rosbot_ws/install/rosbot_controller/lib/python3.10/site-packages/rosbot_controller-0.15.2-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_controller/install.log'

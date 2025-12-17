@@ -1,0 +1,9 @@
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/uninstall.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/rosbot_joy_uninstall.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/test.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/edit_cache.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/rebuild_cache.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/list_install_components.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/install.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/install/local.dir
+/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_joy/CMakeFiles/install/strip.dir
