@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/src/rosbot_ros/rosbot_localization/launch/ekf.launch.py

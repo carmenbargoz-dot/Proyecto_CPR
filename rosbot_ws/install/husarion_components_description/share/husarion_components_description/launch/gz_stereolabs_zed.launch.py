@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/src/husarion_components_description/launch/gz_stereolabs_zed.launch.py

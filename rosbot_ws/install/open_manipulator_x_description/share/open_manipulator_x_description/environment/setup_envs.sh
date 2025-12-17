@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/ament_cmake_environment_hooks/setup_envs.sh

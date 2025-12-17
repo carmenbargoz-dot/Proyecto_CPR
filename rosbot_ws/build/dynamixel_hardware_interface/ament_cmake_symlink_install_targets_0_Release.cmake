@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ale/Proyecto_CPR/rosbot_ws/build/dynamixel_hardware_interface/libdynamixel_hardware_interface.so" "TARGETS" "dynamixel_hardware_interface" "DESTINATION" "lib")

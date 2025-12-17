@@ -1,9 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/uninstall.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/rosbot_xl_control_uninstall.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/test.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/edit_cache.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/rebuild_cache.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/list_install_components.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/install.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/install/local.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot_xl_control/CMakeFiles/install/strip.dir

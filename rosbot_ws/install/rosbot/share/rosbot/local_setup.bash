@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/rosbot/ament_cmake_environment_hooks/local_setup.bash

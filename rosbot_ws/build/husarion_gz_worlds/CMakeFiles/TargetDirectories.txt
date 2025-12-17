@@ -1,9 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/uninstall.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/husarion_gz_worlds_uninstall.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/test.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/edit_cache.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/rebuild_cache.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/list_install_components.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/install.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/install/local.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_gz_worlds/CMakeFiles/install/strip.dir

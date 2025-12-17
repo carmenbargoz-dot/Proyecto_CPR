@@ -1,1 +1,0 @@
-/home/ana/rosbot_ws/src/build/rosbot/ament_cmake_core/rosbotConfig-version.cmake

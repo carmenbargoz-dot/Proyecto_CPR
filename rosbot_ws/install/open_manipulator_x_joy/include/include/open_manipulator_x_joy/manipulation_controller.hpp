@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/src/open_manipulator_x/open_manipulator_x_joy/include/open_manipulator_x_joy/manipulation_controller.hpp

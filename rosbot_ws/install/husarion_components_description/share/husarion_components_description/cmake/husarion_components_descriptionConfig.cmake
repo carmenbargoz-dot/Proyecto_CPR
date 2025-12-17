@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/husarion_components_description/ament_cmake_core/husarion_components_descriptionConfig.cmake

@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/src/dynamixel_hardware_interface/include/dynamixel_hardware_interface/dynamixel_hardware_interface.hpp

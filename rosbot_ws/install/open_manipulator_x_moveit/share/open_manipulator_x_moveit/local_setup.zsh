@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_moveit/ament_cmake_environment_hooks/local_setup.zsh

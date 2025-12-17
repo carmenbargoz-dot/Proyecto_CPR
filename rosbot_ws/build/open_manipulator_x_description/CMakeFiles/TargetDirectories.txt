@@ -1,9 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/uninstall.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/open_manipulator_x_description_uninstall.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/test.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/edit_cache.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/rebuild_cache.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/list_install_components.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/install.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/install/local.dir
-/home/ale/Proyecto_CPR/rosbot_ws/build/open_manipulator_x_description/CMakeFiles/install/strip.dir

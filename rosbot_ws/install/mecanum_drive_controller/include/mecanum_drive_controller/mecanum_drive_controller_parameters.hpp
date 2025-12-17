@@ -1,1 +1,0 @@
-/home/ale/Proyecto_CPR/rosbot_ws/build/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp
