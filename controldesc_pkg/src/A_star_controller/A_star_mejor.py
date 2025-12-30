@@ -4,13 +4,11 @@ A* planner node for ROS 2 Humble - Version with explicit open/closed lists.
 
 Subscriptions:
  - /map (nav_msgs/OccupancyGrid)
- - /odometry/filtered (nav_msgs/Odometry) for robot position as start
+ - /amcl_pose (nav_msgs/PoseWithCovarianceStamped) for robot position as start
  - configurable goal topic (default: /goal_pose) (geometry_msgs/PoseStamped)
 
 Publishes:
  - /astar_path (nav_msgs/Path)
-
-Use the launch file in `launch/astar_launch.py` or run directly.
 """
 import math
 import heapq
@@ -29,8 +27,8 @@ class AStarNode(Node):
     def __init__(self):
         super().__init__('astar_planner_mejor')
 
-        self.declare_parameter('goal_topic', '/goal_pose')
-        self.goal_topic = self.get_parameter('goal_topic').get_parameter_value().string_value
+        self.declare_parameter('goal_topic', '/goal_pose') 
+        self.goal_topic = self.get_parameter('goal_topic').get_parameter_value().string_value 
 
         # Map
         self.map_msg: Optional[OccupancyGrid] = None
@@ -38,22 +36,22 @@ class AStarNode(Node):
         self.map_height = 0
         self.map_res = 0.0
         self.map_origin = None
-        self.map_data: List[int] = []
+        self.map_data: List[int] = [] #donde guardamos el mapa de coste en una lista
 
         # Poses
-        self.start_pose: Optional[PoseStamped] = None
-        self.goal_pose: Optional[PoseStamped] = None
+        self.start_pose: Optional[PoseStamped] = None #para guardar el punto de partida
+        self.goal_pose: Optional[PoseStamped] = None #para guardar el punto objetivo
 
-        # Subscriptions (map uses transient_local to receive published map)
+        # Subscriptions 
         qos_map = QoSProfile(depth=10)
         qos_map.durability = DurabilityPolicy.TRANSIENT_LOCAL
         qos_map.reliability = ReliabilityPolicy.RELIABLE
-        self.create_subscription(OccupancyGrid, '/map', self.map_cb, qos_map)
-        self.create_subscription(PoseWithCovarianceStamped, '/amcl_pose', self.amcl_pose_cb, 10)
+        self.create_subscription(OccupancyGrid, '/map', self.map_cb, qos_map) #nos suscribimos al mapa
+        self.create_subscription(PoseWithCovarianceStamped, '/amcl_pose', self.amcl_pose_cb, 10) #nos suscribimos a nuestra pose
         self.create_subscription(PoseStamped, self.goal_topic, self.goal_cb, 10)
 
         # Publisher
-        self.path_pub = self.create_publisher(Path, '/astar_path', 10)
+        self.path_pub = self.create_publisher(Path, '/astar_path', 10) #creamos topic para publicar el path
 
         self.get_logger().info('A* planner node (mejor version) started')
 
@@ -63,7 +61,7 @@ class AStarNode(Node):
         self.map_height = msg.info.height
         self.map_res = msg.info.resolution
         self.map_origin = msg.info.origin
-        self.map_data = list(msg.data)
+        self.map_data = list(msg.data) #tomamos el mapa y mandamos por pantalla que lo hemos recibido y las dimensiones
         self.get_logger().info(f'Received map: {self.map_width}x{self.map_height} res={self.map_res}')
 
     def amcl_pose_cb(self, msg: PoseWithCovarianceStamped):
@@ -80,7 +78,7 @@ class AStarNode(Node):
     def world_to_map(self, x: float, y: float) -> Optional[Tuple[int, int]]:
         if not self.map_msg:
             return None
-        ox = self.map_origin.position.x
+        ox = self.map_origin.position.x 
         oy = self.map_origin.position.y
         mx = int((x - ox) / self.map_res)
         my = int((y - oy) / self.map_res)
@@ -97,31 +95,32 @@ class AStarNode(Node):
 
     def get_cell_cost(self, mx: int, my: int) -> float:
         """Get the cost of a cell (0-100 scale)"""
-        idx = my * self.map_width + mx # index in the flat map data
-        val = self.map_data[idx] #cost value
-        if val < 0:  # unknown
-            return 100.0  # treat as obstacle
+        idx = my * self.map_width + mx # index del mapa
+        val = self.map_data[idx] #toma el coste de esa posición
+        if val < 0:  # valor de coste no válido suponemos que es obstaculo
+            return 100.0  
         return float(val)
 
     def is_traversable(self, mx: int, my: int) -> bool:
-        """Check if a cell can be traversed (not a full obstacle)"""
+        """Mira que no es un obstáculo (tiene un coste menor que 100 por lo que lo puede atravesar)"""
         idx = my * self.map_width + mx
         val = self.map_data[idx]
         return val >= 0 and val < 100
 
     def get_neighbors(self, mx: int, my: int):
-        """Get valid neighbors with their movement cost including cell traversal cost"""
+        """Vemos a que vecinos puede ir (los 8 de alrededor cual es atravesable y calcula sus costes)"""
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1)]
         for dx, dy in dirs:
             nx = mx + dx
             ny = my + dy
             if 0 <= nx < self.map_width and 0 <= ny < self.map_height:
-                if self.is_traversable(nx, ny):
+                if self.is_traversable(nx, ny): 
+                    #se puede atravesar, calculo su coste:
                     # Simple cost: distance + small penalty for cell cost
                     distance = math.hypot(dx, dy)
                     cell_cost = self.get_cell_cost(nx, ny) 
                     # Add cell cost as a small additional factor
-                    total_cost = distance + (cell_cost * 0.01)
+                    total_cost = distance + (cell_cost * 0.01) # El coste de la celda se añade con un peso pequeño para no romper la heurística
                     yield (nx, ny), total_cost
 
     def heuristic(self, a: Tuple[int, int], b: Tuple[int, int]) -> float:
@@ -134,79 +133,78 @@ class AStarNode(Node):
         """Reconstruct path from start to current by following parent pointers"""
         path = []
         while current is not None:
-            path.insert(0, current)  # Add to beginning of path
+            path.insert(0, current)  # voy añadiendo puntos al path y lo devuelvo en un array
             current = parent.get(current, None)
-        return path  # Already in correct order: start -> goal
+        return path  # de start a goal
 
     def a_star(self, start: Tuple[int, int], goal: Tuple[int, int]) -> Optional[List[Tuple[int, int]]]:
         """
-        A* pathfinding algorithm following the provided pseudocode.
-        Finds minimum cost path from start to goal.
+        A* pathfinding algorithm.
         """
         self.get_logger().info(f'A* searching from {start} to {goal}')
         
-        # Initialize open and closed lists
-        open_list = []  # Priority queue: (f_score, node)
-        closed_list = set()  # Nodes already evaluated
+        # creamos una lista de de puntos por evaluar y ya evaluados
+        open_list = [] 
+        closed_list = set()  
         
         # Track which nodes are in open_list for fast lookup
         open_set = set()
         
         # Node properties
-        g_score = {}  # Cost from start to node
-        h_score = {}  # Estimated cost from node to goal
-        f_score = {}  # Total estimated cost (g + h)
-        parent = {}   # For path reconstruction
+        g_score = {}  # Costo desde start al nodo que se evalua
+        h_score = {}  # costo estimado del nodo al goal
+        f_score = {}  # coste total es la suma de los anteriores
+        parent = {}   # ponemos de donde viene el nodo para luego poder reconstruir el camino
         
-        # Initialize start node
+        # Inicialmente en el comienzo
         g_score[start] = 0.0
         h_score[start] = self.heuristic(start, goal)
         f_score[start] = g_score[start] + h_score[start]
-        parent[start] = None
+        parent[start] = None #no tiene padre porque es el primero
         
-        heapq.heappush(open_list, (f_score[start], start))
+        heapq.heappush(open_list, (f_score[start], start)) ## Insertamos el nodo inicial en la open list priorizado por f_score
         open_set.add(start)
         
         iterations = 0
         
         while open_list and rclpy.ok():
-            # Get node with lowest f value
+            # Sacamos de la lista el de menor coste y el coste del mismo 
             current_f, current = heapq.heappop(open_list)
             open_set.discard(current)
             
-            # Check if we've reached the goal
+            # vemos si el punto a evaluar ya es el goal, si es asi creamos el path y salimos
             if current == goal:
                 return self.reconstruct_path(current, parent)
             
-            # Move current node from open to closed list
+            #Movemos el punto que se esta evaluando a la lista de cerrados
             closed_list.add(current)
             
-            # Check all neighboring nodes
+            # miramos todos los vecinos y sus costes
             for neighbor, distance_cost in self.get_neighbors(*current):
-                # Skip already evaluated nodes
+                # no miramos los vecinos que ya se han visitado
                 if neighbor in closed_list:
                     continue
                 
-                # Calculate tentative g score
+                # calculamos el coste de start al nodo: coste del nodo evaluado mas la distancia al nuevo
                 tentative_g = g_score[current] + distance_cost
                 
-                # If neighbor not in open_list, add it
+                # si el vecino no estaba en la lista abierta lo anadimos y le ponemos su coste
                 if neighbor not in open_set:
                     parent[neighbor] = current
                     g_score[neighbor] = tentative_g
                     h_score[neighbor] = self.heuristic(neighbor, goal)
                     f_score[neighbor] = g_score[neighbor] + h_score[neighbor]
-                    heapq.heappush(open_list, (f_score[neighbor], neighbor))
+                    heapq.heappush(open_list, (f_score[neighbor], neighbor)) 
                     open_set.add(neighbor)
-                elif tentative_g < g_score[neighbor]:
-                    # Found a better path to this neighbor
+                elif tentative_g < g_score[neighbor]: 
+                    # Si el coste del vecino es menor al que se calculo anteriormente significa que este path es menos costoso
                     parent[neighbor] = current
                     g_score[neighbor] = tentative_g
                     f_score[neighbor] = tentative_g + h_score[neighbor]
-                    # Re-add to heap with new priority (heap allows duplicates)
+                    #Lo metemos con el nuevo costo
                     heapq.heappush(open_list, (f_score[neighbor], neighbor))
         
-        # No path exists
+        # No encuentra path
         return None
 
     def plan_and_publish(self):
@@ -219,16 +217,16 @@ class AStarNode(Node):
             return
 
         if self.start_pose:
-            sx = self.start_pose.pose.position.x
+            sx = self.start_pose.pose.position.x #tomamos pose inicial la que tiene el robot en ese momento /amcl_pose
             sy = self.start_pose.pose.position.y
         else:
             sx = self.map_origin.position.x + 0.5 * self.map_res
             sy = self.map_origin.position.y + 0.5 * self.map_res
 
-        gx = self.goal_pose.pose.position.x
+        gx = self.goal_pose.pose.position.x #tomo el goal
         gy = self.goal_pose.pose.position.y
 
-        s_idx = self.world_to_map(sx, sy)
+        s_idx = self.world_to_map(sx, sy) #vemos que estemos dentro del mapa
         g_idx = self.world_to_map(gx, gy)
 
         if s_idx is None or g_idx is None:
@@ -236,7 +234,7 @@ class AStarNode(Node):
             return
 
         if not self.is_traversable(*s_idx):
-            self.get_logger().warning('Start in obstacle, searching nearby traversable cell')
+            self.get_logger().warning('Start in obstacle, searching nearby traversable cell') #si estamos es un obstaculo busca en sus vecinos uno que no sea y lo pone ahí el inicio (no pasara)
             found = False
             for r in range(1, 6):
                 for dx in range(-r, r + 1):
@@ -255,7 +253,7 @@ class AStarNode(Node):
                 self.get_logger().error('No traversable start found nearby')
                 return
 
-        if not self.is_traversable(*g_idx):
+        if not self.is_traversable(*g_idx): #si goal es un obstaculo busca entre sus vecinos una celda libre para poner como goal
             self.get_logger().warning('Goal cell is occupied, searching nearby traversable cell')
             found = False
             for r in range(1, 10):
@@ -276,12 +274,12 @@ class AStarNode(Node):
                 self.get_logger().error('No traversable goal found nearby')
                 return
 
-        path_cells = self.a_star(s_idx, g_idx)
+        path_cells = self.a_star(s_idx, g_idx) #hacemos a*
         if path_cells is None:
-            self.get_logger().error('A* failed to find a path')
+            self.get_logger().error('A* failed to find a path') 
             return
 
-        path_msg = Path()
+        path_msg = Path() #creamos el mensaje de envio del path y enviamos en cada punto el valor en el world de los goals
         hdr = Header()
         hdr.stamp = self.get_clock().now().to_msg()
         hdr.frame_id = self.map_msg.header.frame_id if self.map_msg and self.map_msg.header.frame_id else 'map'
