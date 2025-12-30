@@ -22,9 +22,21 @@ install(
 install(
   PROGRAMS
   src/robot_controller.py
+  src/A_star_controller/A_star_mejor.py
+  src/A_star_controller/set_initial_pose.py
+  src/A_star_controller/map_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
-
+# ---------- Maps ----------
+install(
+  DIRECTORY src/A_star_controller/maps
+  DESTINATION share/${PROJECT_NAME}
+)
+# ---------- Launch files ----------
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 # ---------- Testing ----------
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
