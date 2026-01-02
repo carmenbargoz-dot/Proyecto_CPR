@@ -3,8 +3,6 @@ import os
 import math
 import time
 import yaml
-import numpy as np
-import cv2
 
 import rclpy
 from rclpy.node import Node
@@ -96,31 +94,9 @@ class MapPublisher(Node):
             for y in range(h)
         ]
         
-        # ---- CIERRE MORFOLÓGICO PARA TAPAR HUECOS EN PAREDES ----
-        # Convertir a numpy array para procesamiento con OpenCV
-        grid_np = np.array(grid_2d, dtype=np.int8)
-        
-        # Crear máscara binaria: 1 para obstáculos (100), 0 para el resto
-        obstacles_mask = (grid_np == 100).astype(np.uint8)
-        
-        # Aplicar cierre morfológico con kernel pequeño para cerrar huecos pequeños
-        kernel_size = 3  # Tamaño del kernel (3x3 pixels)
-        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (kernel_size, kernel_size))
-        closed_mask = cv2.morphologyEx(obstacles_mask, cv2.MORPH_CLOSE, kernel)
-        
-        # Aplicar el resultado: donde closed_mask tiene 1 y grid_np tenía 0 o -1, poner 100
-        for y in range(h):
-            for x in range(w):
-                if closed_mask[y, x] == 1 and grid_2d[y][x] != 100:
-                    grid_2d[y][x] = 100
-        
-        self.get_logger().info(f'Morfología: cerrados huecos pequeños con kernel {kernel_size}x{kernel_size}')
-        
         # ---- DILATACIÓN DE OBSTÁCULOS (coste 50) ----
-        inflation_radius = 6  # celdas de dilatación
+        inflation_radius = 3  # celdas de dilatación
         inflated_cost = 50
-        inflated_cost2 = 75
-        inflated_cost3 = 25
         inflated_grid = [row[:] for row in grid_2d]  # copia
         
         for y in range(h):
@@ -132,17 +108,8 @@ class MapPublisher(Node):
                             if 0 <= nx < w and 0 <= ny < h:
                                 if grid_2d[ny][nx] == 0:  # solo celdas libres
                                     dist = math.sqrt(dx*dx + dy*dy)
-                                    new_cost = 0
-                                    if dist > 0 and dist <= inflation_radius/3:
-                                        new_cost = inflated_cost2  # 75
-                                    elif dist <= inflation_radius/2:
-                                        new_cost = inflated_cost  # 50
-                                    elif dist <= inflation_radius:
-                                        new_cost = inflated_cost3  # 25
-                                    
-                                    # Mantener el coste más alto (más peligroso)
-                                    if new_cost > inflated_grid[ny][nx]:
-                                        inflated_grid[ny][nx] = new_cost
+                                    if dist <= inflation_radius and dist > 0:
+                                        inflated_grid[ny][nx] = inflated_cost
         
         grid = [cell for row in inflated_grid for cell in row]
 
