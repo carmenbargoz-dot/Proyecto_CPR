@@ -118,9 +118,10 @@ class MapPublisher(Node):
         
         # ---- DILATACIÓN DE OBSTÁCULOS (coste 50) ----
         inflation_radius = 6  # celdas de dilatación
-        inflated_cost = 50
-        inflated_cost2 = 75
-        inflated_cost3 = 25
+        inflated_cost = 98
+        inflated_cost2 = 70
+        inflated_cost3 = 35
+        inflated_cost4 = 20
         inflated_grid = [row[:] for row in grid_2d]  # copia
         
         for y in range(h):
@@ -134,11 +135,13 @@ class MapPublisher(Node):
                                     dist = math.sqrt(dx*dx + dy*dy)
                                     new_cost = 0
                                     if dist > 0 and dist <= inflation_radius/3:
+                                        new_cost = inflated_cost
+                                    elif dist > 0 and dist <= inflation_radius/2:
                                         new_cost = inflated_cost2  # 75
-                                    elif dist <= inflation_radius/2:
-                                        new_cost = inflated_cost  # 50
+                                    elif dist <= 3*inflation_radius/4:
+                                        new_cost = inflated_cost3  # 50
                                     elif dist <= inflation_radius:
-                                        new_cost = inflated_cost3  # 25
+                                        new_cost = inflated_cost4  # 25
                                     
                                     # Mantener el coste más alto (más peligroso)
                                     if new_cost > inflated_grid[ny][nx]:

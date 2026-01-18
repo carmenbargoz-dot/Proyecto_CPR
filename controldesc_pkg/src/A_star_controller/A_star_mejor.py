@@ -28,15 +28,23 @@ class AStarNode(Node):
         super().__init__('astar_planner_mejor')
 
         self.declare_parameter('goal_topic', '/goal_pose') 
+        self.declare_parameter('downsample_factor', 3)  # Factor de reducción (1=sin reducción, 4=4x4 bloques)
         self.goal_topic = self.get_parameter('goal_topic').get_parameter_value().string_value 
+        self.downsample_factor = self.get_parameter('downsample_factor').get_parameter_value().integer_value
 
-        # Map
+        # Map (original)
         self.map_msg: Optional[OccupancyGrid] = None
         self.map_width = 0
         self.map_height = 0
         self.map_res = 0.0
         self.map_origin = None
         self.map_data: List[int] = [] #donde guardamos el mapa de coste en una lista
+        
+        # Map (downsampled para A*)
+        self.ds_width = 0
+        self.ds_height = 0
+        self.ds_res = 0.0
+        self.ds_data: List[int] = []
 
         # Poses
         self.start_pose: Optional[PoseStamped] = None #para guardar el punto de partida
@@ -61,8 +69,13 @@ class AStarNode(Node):
         self.map_height = msg.info.height
         self.map_res = msg.info.resolution
         self.map_origin = msg.info.origin
-        self.map_data = list(msg.data) #tomamos el mapa y mandamos por pantalla que lo hemos recibido y las dimensiones
+        self.map_data = list(msg.data)
+        
+        # Crear versión downsampled del mapa: en vez de ir pixel a pixel tomo bloques de 4x4
+        self.downsample_map()
+        
         self.get_logger().info(f'Received map: {self.map_width}x{self.map_height} res={self.map_res}')
+        self.get_logger().info(f'Downsampled to: {self.ds_width}x{self.ds_height} res={self.ds_res:.4f} (factor={self.downsample_factor})')
 
     def amcl_pose_cb(self, msg: PoseWithCovarianceStamped):
         ps = PoseStamped()
@@ -75,36 +88,72 @@ class AStarNode(Node):
         self.get_logger().info(f'Goal received on {self.goal_topic}, planning...')
         self.plan_and_publish()
 
+    def downsample_map(self):
+        """Reduce el mapa tomando bloques de downsample_factor x downsample_factor y calculando el máximo"""
+        if self.downsample_factor <= 1:
+            # Sin downsampling, usar mapa original
+            self.ds_width = self.map_width
+            self.ds_height = self.map_height
+            self.ds_res = self.map_res
+            self.ds_data = self.map_data
+            return
+        
+        factor = self.downsample_factor
+        self.ds_width = self.map_width // factor
+        self.ds_height = self.map_height // factor
+        self.ds_res = self.map_res * factor
+        self.ds_data = []
+        
+        # Para cada bloque del mapa reducido
+        for ds_y in range(self.ds_height):
+            for ds_x in range(self.ds_width):
+                # Calcular el máximo coste en el bloque factor x factor y lo asignamos a la celda reducida
+                max_cost = 0
+                for by in range(factor):
+                    for bx in range(factor):
+                        orig_x = ds_x * factor + bx
+                        orig_y = ds_y * factor + by
+                        if orig_x < self.map_width and orig_y < self.map_height:
+                            idx = orig_y * self.map_width + orig_x
+                            cost = self.map_data[idx]
+                            if cost < 0:  # desconocido tratarlo como obstáculo
+                                cost = 100
+                            max_cost = max(max_cost, cost)
+                
+                self.ds_data.append(max_cost)
+    
     def world_to_map(self, x: float, y: float) -> Optional[Tuple[int, int]]:
+        """Convierte coordenadas mundo a coordenadas del mapa downsampled"""
         if not self.map_msg:
             return None
         ox = self.map_origin.position.x 
         oy = self.map_origin.position.y
-        mx = int((x - ox) / self.map_res)
-        my = int((y - oy) / self.map_res)
-        if mx < 0 or my < 0 or mx >= self.map_width or my >= self.map_height:
+        mx = int((x - ox) / self.ds_res)  #Usar resolución del mapa segmentado
+        my = int((y - oy) / self.ds_res)
+        if mx < 0 or my < 0 or mx >= self.ds_width or my >= self.ds_height:
             return None
         return mx, my
 
     def map_to_world(self, mx: int, my: int) -> Tuple[float, float]:
+        """Convierte coordenadas del mapa downsampled a coordenadas mundo"""
         ox = self.map_origin.position.x
         oy = self.map_origin.position.y
-        x = ox + (mx + 0.5) * self.map_res
-        y = oy + (my + 0.5) * self.map_res
+        x = ox + (mx + 0.5) * self.ds_res  # Usar resolución del mapa segmentado
+        y = oy + (my + 0.5) * self.ds_res
         return x, y
 
     def get_cell_cost(self, mx: int, my: int) -> float:
-        """Get the cost of a cell (0-100 scale)"""
-        idx = my * self.map_width + mx # index del mapa
-        val = self.map_data[idx] #toma el coste de esa posición
+        """Get the cost of a cell (0-100 scale) del mapa downsampled"""
+        idx = my * self.ds_width + mx  # index del mapa downsampled
+        val = self.ds_data[idx]  # toma el coste de esa posición
         if val < 0:  # valor de coste no válido suponemos que es obstaculo
             return 100.0  
         return float(val)
 
     def is_traversable(self, mx: int, my: int) -> bool:
         """Mira que no es un obstáculo (tiene un coste menor que 100 por lo que lo puede atravesar)"""
-        idx = my * self.map_width + mx
-        val = self.map_data[idx]
+        idx = my * self.ds_width + mx 
+        val = self.ds_data[idx]
         return val >= 0 and val < 100
 
     def get_neighbors(self, mx: int, my: int):
@@ -113,14 +162,14 @@ class AStarNode(Node):
         for dx, dy in dirs:
             nx = mx + dx
             ny = my + dy
-            if 0 <= nx < self.map_width and 0 <= ny < self.map_height:
+            if 0 <= nx < self.ds_width and 0 <= ny < self.ds_height:  # Usar dimensiones del mapa segmentado
                 if self.is_traversable(nx, ny): 
                     #se puede atravesar, calculo su coste:
                     # Simple cost: distance + small penalty for cell cost
                     distance = math.hypot(dx, dy)
                     cell_cost = self.get_cell_cost(nx, ny) 
                     # Add cell cost as a small additional factor
-                    total_cost = distance + (cell_cost * 0.01) # El coste de la celda se añade con un peso pequeño para no romper la heurística
+                    total_cost = distance + (cell_cost * 0.1) # El coste de la celda se añade con un peso pequeño para no romper la heurística
                     yield (nx, ny), total_cost
 
     def heuristic(self, a: Tuple[int, int], b: Tuple[int, int]) -> float:

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>README PROYECTO CPR</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.5; margin: 20px; }
+        h1, h2, h3, h4 { color: #333; }
+        pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+        code { font-family: Consolas, monospace; }
+        ul { list-style-type: disc; margin-left: 25px; }
+        .note { font-style: italic; color: #555; background-color: #ffffcc; padding: 5px; border-left: 3px solid #ffeb3b; }
+    </style>
+</head>
+<body>
+
+<h1>README CPR</h1>
+
+<h2>Autores</h2>
+<ul>
+    <li>Carmen Gómez Barrera</li>
+    <li>Alba Rodríguez Fernández</li>
+    <li>Ana Palma Álvarez</li>
+    <li>María Alejandra Díaz-Capmany Carrasco</li>
+    <li>Cristina Porras Macua</li>
+</ul>
+
+<h2>Ubicación y descripción de archivos</h2>
+
+<pre><code>
+controldesck_pkg/
+│
+│   
+├── launch/
+│   └── sistema.launch.py
+│        └─ Lanza el sistema completo
+│
+│
+ src/
+│   ├── robot_controller.py
+│   │    └─ Controlador para el robot
+│   │       (control de punto descentrado, seguimiento carrot y evitación de obstáculos. Genera dos archivos txt con la trayectoria a seguir y la posicion)
+│   │
+│   ├── evaluation.py
+│   │    └─ Creador de ficheros de evaluación
+│   │
+│   └── A_star_controller
+│        │
+│        ├── A_star_mejor.py
+│        │    └─ Planificador A* mejorado
+│        │
+│        ├── Theta_star.py
+│        │    └─ Planificador Theta*
+│        │
+│        ├── Theta_star2.py
+│        │    └─ Planificador Theta Safety Aware
+│        │
+│        ├── map_publisher.py
+│        │    └─ Archivo lanzador del mapa deseado
+│        │
+│        ├── comparaciones.py
+│        │    └─ Tests de prueba para los planificadores
+│        │
+│        └── maps
+│             └─ Carpeta con los mapas propuestos
+
+
+graficas/
+│
+├── control/
+│    │
+│    └── grafica_control.py
+│         └─ Generador de gráficas
+│    
+│
+├── planificacion/
+│    │
+│    ├── grafica_comp_factor.m
+│    │    └─ Generador de gráficas comparativas de resultados
+│    │
+│    ├── graficas.m
+│    │    └─ Generador de gráficas para los tres algoritmos de planificación
+│    │
+│    └── carpetas con resultados obtenidos de cada mundo
+
+
+src/
+│
+├── husarion_gz_worlds/
+│   └── worlds/
+│       └─ Archivos .sdf con la descripción gráfica del mundo
+</code></pre>
+
+<h2>Compilación del entorno</h2>
+
+<p>Antes de poder lanzar el sistema, es necesario compilar los paquetes. Desde la raíz del espacio de trabajo (<code>rosbot_ws</code>), ejecute:</p>
+
+<pre><code>colcon build </code></pre>
+
+
+<h2>Instrucciones para lanzar el sistema</h2>
+
+<p>Primero configurar el entorno de la terminal antes de trabajar con el sistema. Una vez compilado, desde el directorio <code>rosbot_ws</code> ejecutar:</p>
+
+<pre><code>source install/setup.bash</code></pre>
+
+<p>Tras esto se declaran las instrucciones para lanzar el sistema.</p>
+
+<h3>Terminal 1</h3>
+
+<p>Configurar el sistema y todo lo relacionado con él:</p>
+
+<pre><code>ros2 launch controldesc_pkg sistema.launch.py escenario:= planificador:=</code></pre>
+
+<h3>Argumentos</h3>
+
+<h4>Escenario (mundo deseado para lanzar)</h4>
+<p>Posibilidades:</p>
+<ul>
+    <li>custom</li>
+    <li>husarion_office</li>
+    <li>husarion_office_completo</li>
+    <li>husarion_world</li>
+    <li>laberinto</li>
+    <li>laberinto_complejo</li>
+    <li>obstaculos</li>
+    <li>obstaculos2</li>
+</ul>
+
+<h4>Planificador (tipo de planificación deseada para la trayectoria)</h4>
+<p>Posibilidades:</p>
+<ul>
+    <li>Astar</li>
+    <li>Theta</li>
+    <li>Theta2</li>
+</ul>
+
+<h2>Ejecución para los archivos de evaluación</h2>
+
+<h3>Archivos del control</h3>
+
+<p>El control genera en el directorio <code>rosbot_ws/</code> unos archivos .txt donde se guardan la trayectoria original, real y suavizada, estos deberán trasladarse a <code>rosbot_ws/graficas/control/</code>, una vez hecho esto, ejecutar:</p>
+
+<pre><code>python3 grafica_control.py </code></pre>
+
+<h3>Archivos de planificación</h3>
+
+<p>Para graficar los archivos .txt generados por el planificador, tanto para la comparación de factores entre mundos <code>graficas_comp_factor.m</code> como para la comparación de algoritmos  <code>graficas.m</code>: </p>
+
+<ul>
+    <li>Declarar el nombre de los resultados que se desean estudiar en el archivo .m</li>
+    <li>Abrir Octave</li>
+    <li>Ejecutar el archivo .m deseado</li>
+</ul>
+
+</body>
+</html>

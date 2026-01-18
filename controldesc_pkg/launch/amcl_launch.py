@@ -58,14 +58,15 @@ def generate_launch_description():
         ),
         
         # Activar AMCL automáticamente
-        ExecuteProcess(
-            cmd=['ros2', 'lifecycle', 'set', '/amcl', 'configure'],
-            shell=False,
-            output='screen'
-        ),
-        ExecuteProcess(
-            cmd=['ros2', 'lifecycle', 'set', '/amcl', 'activate'],
-            shell=False,
-            output='screen'
-        ),
+        Node(
+    package='nav2_lifecycle_manager',
+    executable='lifecycle_manager',
+    name='lifecycle_manager_amcl',
+    output='screen',
+    parameters=[{
+        'use_sim_time': True,
+        'autostart': True,
+        'node_names': ['amcl']
+    }]
+),
     ])
